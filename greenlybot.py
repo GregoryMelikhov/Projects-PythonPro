@@ -1,12 +1,12 @@
 import telebot
-from greenlylogic import craft_xmas_ball, sorting, time_decomposition_of
+from greenlylogic import craft_xmas_ball, sorting, time_decomposition_of, about
 
-token = ""
+token = "8053418554:AAEWccbK7MbVut4dmULb3y3Lwzsg_JNnXOA"
 bot = telebot.TeleBot(token)
 
 @bot.message_handler(commands=['start'])
 def send_welcome(message):
-    bot.reply_to(message, 'Привет!')
+    bot.reply_to(message, about)
 
 @bot.message_handler(commands=['crafts'])
 def send_crafts(message):
