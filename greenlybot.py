@@ -21,3 +21,5 @@ print("Bot warking!")
 def send_time_decomposition_of(message):
     bot.reply_to(message, time_decomposition_of)
 bot.polling()
+
+#by: Gregory Melikhov
